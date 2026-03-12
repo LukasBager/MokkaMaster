@@ -12,7 +12,9 @@ Andre klasser skal arve fra denne klasse.
 */
 
 public abstract class Drink {
-
+    private DrinkType type;
+    private Size size;
+    private boolean whippedCream;
     /*
     STUDENT TASK:
 

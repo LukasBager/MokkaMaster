@@ -13,8 +13,11 @@ public class CoffeeMachine {
     /*
     STUDENT TASK:
 
-    Skriv metoden serve()
+    Skriv metoden serve() */
+    public static serve;
 
+
+    /*
     Metoden skal:
     - modtage DrinkType
     - modtage Size
