@@ -2,6 +2,9 @@ package MoccaMaster.service;
 
 import MoccaMaster.model.*;
 
+//Jeppe
+
+
 /*
 CoffeeMachine laver drinks.
 
@@ -21,8 +24,6 @@ public class CoffeeMachine {
             Drink ChocolateDrink = new ChocolateDrink();
         } else {
             Drink CoffeeDrink = new CoffeeDrink();
-
-
 
     }
 
