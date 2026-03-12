@@ -15,19 +15,23 @@ public class Cup {
     Opret en variabel:
     Drink drink
     */
-
+    Drink drink;
     /*
     STUDENT TASK:
 
     Skriv en constructor der modtager en Drink.
     */
-
+    public Cup (Drink drink) {
+        this.drink = drink;
+    }
     /*
     STUDENT TASK:
 
     Skriv en getter metode for drink.
     */
-
+    public Drink getDrink() {
+        return drink;
+    }
     /*
     STUDENT TASK:
 
@@ -36,7 +40,9 @@ public class Cup {
     Metoden skal returnere en tekst
     der beskriver koppen.
     */
-
+    public String describe() {
+        return "";
+    }
     /*
     HER SKAL VÆRE EN IF
 

@@ -1,5 +1,6 @@
 package MoccaMaster.service;
 
+import MoccaMaster.model.*;
 
 /*
 CoffeeMachine laver drinks.
@@ -14,7 +15,16 @@ public class CoffeeMachine {
     STUDENT TASK:
 
     Skriv metoden serve() */
-    public static serve;
+    public void serve(DrinkType e1, Size e2, Boolean cream) {
+
+        if (e1 == DrinkType.CHOCOLATE_DRINK) {
+            Drink ChocolateDrink = new ChocolateDrink();
+        } else {
+            Drink CoffeeDrink = new CoffeeDrink();
+
+
+
+    }
 
 
     /*
