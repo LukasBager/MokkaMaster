@@ -1,6 +1,9 @@
 package MoccaMaster.ui;
 
 import MoccaMaster.*;
+import MoccaMaster.model.Drink;
+import MoccaMaster.model.DrinkType;
+import MoccaMaster.model.Size;
 import MoccaMaster.service.CoffeeMachine;
 import MoccaMaster.util.CupSorter;
 import MoccaMaster.file.FileHandler;
@@ -31,7 +34,7 @@ public class CoffeeMachineUI {
     */
     CoffeeMachine coffeeMachine = new CoffeeMachine();
 
-    public void start(){
+    public void start() {
 
         /*
         STUDENT TASK:
@@ -45,13 +48,15 @@ public class CoffeeMachineUI {
         Tilføj flere drinks til listen.
         Brug machine.serve(...)
         */
-
+        coffeeMachine.serve(DrinkType.BLACK_COFFEE, Size.LARGE, false);
+        coffeeMachine.serve(DrinkType.ESPRESSO, null, false);
+        coffeeMachine.serve(DrinkType.CHOCOLATE_DRINK, Size.LARGE, true);
         /*
         STUDENT TASK:
 
         Kald sorteringsklassen som sorterer listen.
         */
-
+        sortCups(cups);
         /*
         HER SKAL VÆRE ET LOOP
 
