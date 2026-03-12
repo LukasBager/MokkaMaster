@@ -41,13 +41,27 @@ public class Cup {
     der beskriver koppen.
     */
     public String describe() {
-        return "";
+
+        String returnText = "This drink is a " + drink.getType();
+
+        if (drink.getSize() != null) {
+            returnText += "\n This drink is a size: " + drink.getSize();
+        }
+
+        if (drink.getWhippedCream()) {
+            returnText += "\n This drink also has whipped cream.";
+        }
+
+        return returnText;
+
     }
     /*
     HER SKAL VÆRE EN IF
 
     Hvis størrelse ikke er null.
     */
+
+
 
     /*
     HER SKAL VÆRE EN IF

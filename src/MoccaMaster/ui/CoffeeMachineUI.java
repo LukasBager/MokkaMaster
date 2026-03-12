@@ -71,27 +71,14 @@ public class CoffeeMachineUI {
         */
         try {
             FileWriter writer = new FileWriter("cups.csv", true);
-
             for (Cup c : cups) {
-                writer.write(c.getDrink());
+                writer.write(c.getDrink().getType().toString() + "," + c.getDrink().getSize().toString() + "," + Boolean.toString(c.getDrink().getWhippedCream()) + System.lineSeparator());
             }
-
             writer.flush();
             writer.close();
         } catch (IOException e) {
             System.out.println("Error: " + e);
         }
-    }
-
-    private static void showMenu() {
-        System.out.println("Welcome to the Coffe Machine. Pick an option below. Enter number.");
-        System.out.println("1. Black coffee");
-        System.out.println("2. Espresso");
-        System.out.println("3. Double espresso");
-        System.out.println("4. Triple espresso");
-        System.out.println("5. Latte Machiatto");
-        System.out.println("6. Chocolate Milk");
-        System.out.println("7. Chocolate Drink");
     }
 
 }
