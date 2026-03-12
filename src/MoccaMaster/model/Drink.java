@@ -15,37 +15,27 @@ public abstract class Drink {
     private DrinkType type;
     private Size size;
     private boolean whippedCream;
-    /*
-    STUDENT TASK:
 
-    Opret private variabler:
+    public Drink(DrinkType type, Size size, boolean whippedCream) {
+        this.type = type;
+        this.size = size;
+        this.whippedCream = whippedCream;
+    }
+    public DrinkType getType(){
+        return type;
+    }
 
-    - DrinkType type
-    - Size size
-    - boolean whippedCream
-    */
+    public Size getSize(){
+        return size;
+    }
 
-    /*
-    STUDENT TASK:
+    public boolean getWhippedCream(){
+        return whippedCream;
+    }
 
-    Skriv en constructor der modtager:
-    - DrinkType
-    - Size
-    - boolean
-
-    Gem værdierne i variablerne.
-    */
-
-    /*
-    STUDENT TASK:
-
-    Skriv getter metoder for variablerne.
-    */
-
-    /*
-    Abstrakt metode.
-
-    Alle subklasser SKAL implementere denne metode.
-    */
+    public void setWhippedCream() {
+        this.whippedCream = whippedCream;
+    }
+    public abstract String prepare();
 
 }

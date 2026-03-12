@@ -1,9 +1,9 @@
 package MoccaMaster.ui;
 
-//import Lesson19.MoccaMaster.*;
-//import Lesson19.MoccaMaster.service.CoffeeMachine;
-//import Lesson19.MoccaMaster.util.CupSorter;
-//import Lesson19.MoccaMaster.file.FileHandler;
+import MoccaMaster.*;
+import MoccaMaster.service.CoffeeMachine;
+import MoccaMaster.util.CupSorter;
+import MoccaMaster.file.FileHandler;
 
 
 /*
@@ -19,15 +19,17 @@ Den skal kun koordinere andre klasser.
 
 import MoccaMaster.model.Cup;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class CoffeeMachineUI {
 
     /*
     STUDENT TASK:
-
     Opret en variabel af typen CoffeeMachine.
     */
+    CoffeeMachine coffeeMachine = new CoffeeMachine();
 
     public void start(){
 
@@ -59,11 +61,24 @@ public class CoffeeMachineUI {
         Hint:
         Det er et for-each loop.
         */
-
+        for (Cup c : cups) {
+            c.describe();
+        }
         /*
         STUDENT TASK:
 
         Gem listen til en CSV fil ved hjælp af FileHandler.
         */
+        try {
+            FileWriter writer = new FileWriter("cups.csv", true);
+            for (Cup c : cups) {
+                writer.write(c.getDrink().getType().toString() + "," + c.getDrink().getSize().toString() + "," + Boolean.toString(c.getDrink().getWhippedCream()) + System.lineSeparator());
+            }
+            writer.flush();
+            writer.close();
+        } catch (IOException e) {
+            System.out.println("Error: " + e);
+        }
     }
+
 }
