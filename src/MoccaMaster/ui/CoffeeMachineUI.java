@@ -74,16 +74,7 @@ public class CoffeeMachineUI {
 
         Gem listen til en CSV fil ved hjælp af FileHandler.
         */
-        try {
-            FileWriter writer = new FileWriter("cups.csv", true);
-            for (Cup c : cups) {
-                writer.write(c.getDrink().getType().toString() + "," + c.getDrink().getSize().toString() + "," + Boolean.toString(c.getDrink().getWhippedCream()) + System.lineSeparator());
-            }
-            writer.flush();
-            writer.close();
-        } catch (IOException e) {
-            System.out.println("Error: " + e);
-        }
+        writeOrders("cups.txt", cups);
     }
 
 }
