@@ -28,5 +28,8 @@ public class CoffeeDrink extends Drink {
     Den skal returnere en tekst som beskriver
     hvilken kaffe der laves.
     */
-
+    @Override
+    public String prepare() {
+        return "You chose " + getType() + ", and it's getting prepared!";
+    }
 }

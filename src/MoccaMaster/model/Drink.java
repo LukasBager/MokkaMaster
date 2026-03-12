@@ -33,6 +33,9 @@ public abstract class Drink {
         return whippedCream;
     }
 
+    public void setWhippedCream() {
+        this.whippedCream = whippedCream;
+    }
     public abstract String prepare();
 
 }
