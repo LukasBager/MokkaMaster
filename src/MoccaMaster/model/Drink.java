@@ -33,7 +33,7 @@ public abstract class Drink {
         return whippedCream;
     }
 
-    public void setWhippedCream() {
+    public void setWhippedCream(boolean whippedCream) {
         this.whippedCream = whippedCream;
     }
     public abstract String prepare();

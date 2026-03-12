@@ -27,11 +27,7 @@ public class ChocolateDrink extends Drink {
 
     @Override
     public String prepare() {
-        return "You chose " + getType() + ", and it's getting prepared!";
-        if (whippedCream){
-            System.out.println("Yay, your drink is getting whipped cream sprayed over it:D");
-        } else {
-            System.out.println("No whipped cream for this drink!");
-        }
+        if (getWhippedCream()) {
+            return "Preparing " + getType() + " with whipped cream";        }
+return "Preparing chocolate: " + getType();        }
     }
-}

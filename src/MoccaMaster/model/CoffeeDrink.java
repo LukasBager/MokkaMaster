@@ -30,6 +30,6 @@ public class CoffeeDrink extends Drink {
     */
     @Override
     public String prepare() {
-        return "You chose " + getType() + ", and it's getting prepared!";
+        return "Preparing coffee: " + getType();
     }
 }
