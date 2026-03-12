@@ -17,6 +17,10 @@ Den må IKKE:
 Den skal kun koordinere andre klasser.
 */
 
+import MoccaMaster.model.Cup;
+
+import java.util.ArrayList;
+
 public class CoffeeMachineUI {
 
     /*
@@ -32,7 +36,7 @@ public class CoffeeMachineUI {
 
         Opret en ArrayList som skal indeholde Cup objekter.
         */
-
+        ArrayList<Cup> cups = new ArrayList<>();
         /*
         STUDENT TASK:
 

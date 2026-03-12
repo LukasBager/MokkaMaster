@@ -12,15 +12,19 @@ STUDERENDE SKAL:
 - kalde start() metoden
 */
 
+import MoccaMaster.ui.CoffeeMachineUI;
+
 public class MoccaMasterApp {
 
     public static void main(String[] args) {
 
         // STUDENT TASK:
         // Opret CoffeeMachineUI objekt
+        CoffeeMachineUI coffeeMachineUI = new CoffeeMachineUI();
 
         // STUDENT TASK:
         // Kald start() metoden
+        coffeeMachineUI.start();
 
     }
 }
