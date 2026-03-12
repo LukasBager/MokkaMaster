@@ -8,6 +8,9 @@ Dette er et eksempel på arv (inheritance).
 */
 
 public class CoffeeDrink extends Drink {
+    public CoffeeDrink(DrinkType type, Size size, boolean whippedCream) {
+        super(type, size, whippedCream);
+    }
 
     /*
     STUDENT TASK:

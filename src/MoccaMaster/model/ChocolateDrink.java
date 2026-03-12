@@ -8,12 +8,9 @@ Den kan have flødeskum.
 */
 
 public class ChocolateDrink extends Drink {
-
-    /*
-    STUDENT TASK:
-
-    Skriv en constructor der kalder super(...).
-    */
+    public ChocolateDrink(DrinkType type, Size size, boolean whippedCream) {
+        super(type, size, whippedCream);
+    }
 
     /*
     STUDENT TASK:
@@ -28,4 +25,11 @@ public class ChocolateDrink extends Drink {
     returneres en anden tekst.
     */
 
+    @Override
+    public String prepare() {
+        if (this.getWhippedCream()) {
+            System.out.println("Yay, your drink is getting whipped cream sprayed over it:D");
+        }
+        return
+    }
 }
